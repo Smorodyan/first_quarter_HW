@@ -6,20 +6,18 @@
 
 void newText(string[] text)
 {
-    Console.Write("{ ");
     for(int i = 0; i < text.Length; i++)
     {
         string current = text[i];
         if(current.Length <= 3 )
-            Console.Write(text[i] + "; ");
+            Console.Write("'" + text[i] + "'\t");
     }
-    Console.Write("}");
 }
 
-string[] text = {"hello", "wod", "world", "2"};
+string[] text = {"om", "hello", "wod", "world", "2"};
 
 for(int i = 0; i < text.Length; i++)
- Console.Write(text[i] + "; ");
+    Console.Write("'" + text[i] + "'\t");
 
 Console.WriteLine();
 newText(text);
